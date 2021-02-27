@@ -1,0 +1,112 @@
+main{
+    /* justify-items: center;
+    width: 100%;
+    grid-template-columns: min-content 1fr 360px;
+    grid-template-rows: 46px 46px 328px 58px 70px 40px 169px;
+    grid-template-areas: "platzivideo-logo  video               video"
+                         "album-tittle      video               video"
+                         "song-track        video               video"
+                         "song-track        song-name           song-name"
+                         "song-track        song-share-tags     song-share-tags"
+                         "playlist          comentary           recently"
+                         "playlist          comentary           recently";
+} */
+}
+
+.platzivideo-logo{
+/* grid-area: platzivideo-logo; */
+}
+.video{
+    width: 100%;
+/* grid-area: video; */
+}
+
+.video-youtube{
+    width: 100%;
+}
+
+.album-tittle{
+    margin: 15px 0;
+    font-size: 24px;
+/* grid-area: album-tittle; */
+}
+
+.song-track{
+    margin: 20px 0;
+/* grid-area: song-track; */
+}
+
+.song-track--details{
+    grid-template-columns: 25px 200px 60px;
+    grid-gap: 5px;
+}
+
+.song-track--details p{
+    font-size: 20px;
+}
+.song-track--details a{
+    font-size: 18px;
+}
+
+.song-name{
+    padding-left: 10px;
+/* grid-area: song-name; */
+}
+
+.song-share-tags{
+    display: flex;
+    width: 100%;
+    align-items: center;
+/* grid-area: song-share-tags; */
+}
+.song-share-tags > h4{
+    padding: 10px 0;
+
+}
+.share-download{
+    width: 33%;
+}
+.music-tags{
+    display: inline-flex;
+    width: 35%;
+}
+.vallenato{
+    width: 30%;
+}
+
+.musica-latina{
+    width: 45%;
+}
+
+.comentary{
+/* grid-area: comentary; */
+}
+.comentar{
+    max-width: 430px;
+    grid-template-columns: 50px 350px;
+}
+
+.comentar > input{
+    width: 100%;
+    
+}
+.comentario{
+    grid-template-columns: 50px 350px;
+}
+.recently{
+/* grid-area: recently; */
+}
+
+.recently1 img{
+    height: 80px;
+    width: 80px;
+}
+.recently2 img{
+    height: 80px;
+    width: 80px;
+}
+
+.playlist{
+    padding-top: 20px;
+/* grid-area: playlist; */
+}

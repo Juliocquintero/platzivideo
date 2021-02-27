@@ -1,0 +1,373 @@
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+    min-width: 320px;
+    background-color: rgb(23, 27, 47);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 62px 380px 60px auto 50px 520px 235px auto 180px;
+    grid-template-areas: "platzivideo-logo"
+                         "video"
+                         "song-name"
+                         "song-share-tags"
+                         "album-tittle"
+                         "song-track"
+                         "comentary"
+                         "recently"
+                         "playlist"; 
+    align-content: center;
+}
+
+
+/* ====================================================================== platzivideo-logo  ====================================================================== */
+
+.platzivideo-logo {
+    display: flex;
+    grid-area: platzivideo-logo;
+    width: 100%;
+    min-width: 320px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.platzivideo-logo img{
+    width: 100%;
+    max-width: 240px;
+    max-height: 46px;
+}
+
+/* ====================================================================== video ====================================================================== */
+
+.video {
+    grid-area: video;
+    width: 100%;
+    min-width: 320px;
+}
+
+.video-youtube{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ====================================================================== song-name ====================================================================== */
+
+.song-name{
+    background-color: rgba(255, 255, 255, .95);
+    width: 100%;
+    min-width: 320px;
+    grid-area: song-name;
+    padding-left: 10px;
+}
+.song-name h2{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+.song-name h3{
+    color: #555;
+    font-size: 14px;
+    margin: 0px;
+    font-weight: 300;
+}
+
+/* ====================================================================== song-share-tags ====================================================================== */
+
+.song-share-tags{
+    grid-area: song-share-tags;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 320px;
+    background-color: rgba(255, 255, 255, .94);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.song-share-tags h4{
+    width: 160px;
+    background-color: crimson;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.share-download{
+    width: 33%;
+    min-width: 200px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.share-download div{
+    display: grid;
+    grid-template-rows: 20px 20px;
+    grid-gap: 5px;
+    justify-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.share-download div p{
+    margin: 0px;
+}
+
+.music-tags{
+    display: flex;
+    width: 33%;
+    min-width: 200px;
+    text-align: center;
+    
+}
+
+.music-tags p{
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    align-self: center;
+}
+
+.vallenato{
+    font-size: 14px;
+    background-color: aquamarine;
+    margin: 10px 10px
+}
+
+.musica-latina{
+    font-size: 14px;
+    background-color:lightpink;
+    margin: 10px 0px
+}
+
+/* ====================================================================== album-tittle ====================================================================== */
+
+.album-tittle{
+    font-size: 20px;
+    grid-area: album-tittle;
+    color: #ffffff;
+    width: 100%;
+    min-width: 320px;
+    margin: 10px 0;
+    padding-left: 10px;
+    text-align: center;
+}
+
+/* ====================================================================== song-track ====================================================================== */
+
+.song-track{
+    grid-area: song-track;
+    width: 100%;
+    min-width: 320px;
+    padding-left: 10px;
+}
+
+.song-track--details{
+    display: grid;
+    grid-area: song-track;
+    grid-template-columns: 25px 200px 50px;
+    grid-auto-rows: 20px; 
+    align-items: center;
+    color: white;
+    grid-gap: 5px;
+    justify-content: center;
+}
+.song-track--details p{
+    font-size: 16px;
+}
+.song-track--details a{
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.song-track--details a strong {
+    color: crimson;
+}
+.song-track--details a span{
+    background-image: url(/images/pausecrinson.png);
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+}
+
+/* ====================================================================== comentary ====================================================================== */
+.comentary {
+    grid-area: comentary;
+    display: grid;
+    width: 100%;
+    min-width: 320px;
+    grid-template-rows: 30px 50px 50px 50px;
+    grid-gap: 5px;
+    background-color: rgba(255, 255, 255, .95);
+    padding-left: 10px;
+    
+}
+
+.comentary h3{
+    margin: 0 10px;
+    align-self: center;
+}
+
+.comentar{
+    max-width: 288px;
+    display: grid;
+    grid-template-columns: 50px 150px;
+    grid-gap: 3px;
+    align-items: center;
+    background-color: #eaeaea;
+    border: 1px solid #eee;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+
+}
+
+.comentar img{
+    border-radius: 50%;
+}
+.comentar input {
+    height: 30px;
+    border: none;
+    background-color: #eaeaea;
+    outline: #555;
+}
+
+.comentario {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    grid-template-rows: 50px 50px 50px;
+    align-items: center;
+
+}
+
+.comentario div{
+    display: grid;
+    grid-template-rows: 20px 20px;
+}
+
+.comentario div p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.comentario img {
+    border-radius: 50%;
+}
+/* ====================================================================== Recently ====================================================================== */
+.recently-container{
+    width: 100%;
+    min-width: 320px;
+    grid-area: recently;
+    background-color: rgba(255, 255, 255, .95);
+    align-items: center;
+    padding-left: 10px;
+}
+
+.recently-container a{
+    display: block;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: crimson;
+    text-decoration: none;
+    text-align: center;
+}
+.recenctly-cards-container{
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recently1{
+    width: 256px;
+    min-width: 200px;
+    display: inline-flex;
+    gap: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.recently1 img{
+    height: 60px;
+    width: 60px;
+}
+
+.recently1 div {
+    align-items: center;
+}
+.recently1 div p{
+    margin: 10px 0;
+}
+
+.recently2{
+    width: 256px;
+    min-width: 200px;
+    display: inline-flex;
+    gap: 5px;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.recently2 img{
+    height: 60px;
+    width: 60px;
+}
+.recently2 div {
+
+    align-items: center;
+}
+
+.recently2 div p{
+    margin: 10px auto;
+}
+
+/* ====================================================================== Playlist ====================================================================== */
+.playlist{
+    width: 100%;
+    min-width: 320px;
+    grid-area: playlist;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 42px 40px 40px 40px;
+    grid-gap: 5px;
+    padding-left: 10px;
+}
+.playlist h3{
+    margin: 0px 5px 5px 10px;
+    padding-top: 10px;
+    color: crimson;
+}
+
+.playlist div {
+    display: grid;
+    grid-template-columns: 75px 150px;
+    align-items: center
+}
+
+.playlist div img{
+    border-radius: 50%;
+}
+
+.playlist div p{
+    font-size: 16px;
+    margin: 5px 0;
+    color: #ffffff;
+}
+/* ====================================================================== Animaciones ====================================================================== */
+
+
+
