@@ -197,12 +197,7 @@ main {
 .song-track--details a strong {
     color: crimson;
 }
-.song-track--details a span{
-    background-image: url(/images/pausecrinson.png);
-    background-size: contain;
-    width: 12px;
-    height: 12px;
-}
+
 
 /* ====================================================================== comentary ====================================================================== */
 .comentary {
