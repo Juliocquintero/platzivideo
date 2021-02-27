@@ -14,11 +14,11 @@ main{
 }
 
 .platzivideo-logo{
-/* grid-area: platzivideo-logo; */
+
 }
 .video{
     width: 100%;
-/* grid-area: video; */
+
 }
 
 .video-youtube{
@@ -28,12 +28,12 @@ main{
 .album-tittle{
     margin: 15px 0;
     font-size: 24px;
-/* grid-area: album-tittle; */
+
 }
 
 .song-track{
     margin: 20px 0;
-/* grid-area: song-track; */
+
 }
 
 .song-track--details{
@@ -50,14 +50,13 @@ main{
 
 .song-name{
     padding-left: 10px;
-/* grid-area: song-name; */
+
 }
 
 .song-share-tags{
     display: flex;
     width: 100%;
     align-items: center;
-/* grid-area: song-share-tags; */
 }
 .song-share-tags > h4{
     padding: 10px 0;
@@ -79,8 +78,9 @@ main{
 }
 
 .comentary{
-/* grid-area: comentary; */
+
 }
+
 .comentar{
     max-width: 430px;
     grid-template-columns: 50px 350px;
