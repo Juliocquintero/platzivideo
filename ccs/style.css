@@ -41,11 +41,11 @@ main {
     justify-content: center; 
 }
 
-.platzivideo-logo img{
+.logo-mobile{
     width: 100%;
-    max-width: 240px;
-    max-height: 46px;
+    max-width: 140px;
 }
+
 
 /* ====================================================================== video ====================================================================== */
 
@@ -126,6 +126,12 @@ main {
     margin: 0px;
 }
 
+.share-download div img{
+    width: 16px;
+    height: auto;
+
+}
+
 .music-tags{
     display: flex;
     width: 33%;
@@ -139,9 +145,11 @@ main {
     color: white;
     padding: 5px;
     align-self: center;
+    color: black;
 }
 
 .vallenato{
+    color: black;
     font-size: 14px;
     background-color: aquamarine;
     margin: 10px 10px
@@ -150,7 +158,8 @@ main {
 .musica-latina{
     font-size: 14px;
     background-color:lightpink;
-    margin: 10px 0px
+    margin: 10px 0px;
+    color: black;
 }
 
 /* ====================================================================== album-tittle ====================================================================== */
@@ -232,6 +241,7 @@ main {
 
 .comentar img{
     border-radius: 50%;
+    width: 36px;
 }
 .comentar input {
     height: 30px;
@@ -260,6 +270,7 @@ main {
 
 .comentario img {
     border-radius: 50%;
+    width: 36px;
 }
 /* ====================================================================== Recently ====================================================================== */
 .recently-container{
@@ -353,7 +364,9 @@ main {
     align-items: center
 }
 
-.playlist div img{
+.playlist-img-friend{
+    width: 32px;
+    height: auto;
     border-radius: 50%;
 }
 
